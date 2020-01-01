@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Charity</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css-rtl/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="fonts/css/all.css">
+  <style>
+    .font {
+      font-size: 40px;
+    }
+
+    .footer-color {
+      background-color: #231f20;
+    }
+
+    .font-family {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    hr {
+      background-color: #914199;
+      height: 5px;
+      padding: 0%;
+    }
+
+    .color {
+      color: #914199;
+    }
+
+
+    .color-opacity {
+      background-color: black;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80%;
+      height: 20%;
+
+
+    }
+
+    .icons {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-left: 40%
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .img-size {
+      width: 50%;
+      height: 50%;
+      text-align: center;
+    }
+
+    .blog .card .parent-ovrlay {
+      transition: transform 0.7s;
+    }
+
+    .blog .card .parent-ovrlay:hover img {
+      transform: scale(1.2);
+    }
+
+
+    .tabro3at-a:hover {
+      text-decoration: none;
+      color: #ae7ab3;
+      text-decoration-style: none;
+    }
+
+    .end-color {
+      color: white;
+    }
+  </style>
+
+
+
+  <!--  <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+ -->
+</head>
+
+<body>
+
+  <div class="bg-dark p-2 pt-1 row" style="height: 50px;" dir="rtl">
+
+
+    <span class="offset-1">
+      <h6 class="text-light"> <i class="fas fa-phone fa-1x color"></i> الهاتف 0507060800 </h6>
+    </span>
+    <span class="offset-1">
+      <h6 class="text-light"> <i class="fas fa-at fa-1x color"></i> farah@hotmail.com </h6>
+    </span>
+    <span class="offset-1">
+      <h6 class="text-light"> <i class="fas fa-phone fa-1x color"></i> NasrCity, Egypt </h6>
+    </span>
+
+    <span class="offset-1">
+      <a href="https://twitter.com/ayama_society " class="mr-2"> <i class="fab fa-twitter-square fa-2x color "></i></a>
+      <a href="https://www.youtube.com/channel/UCszZGfWWfnuK_blz_tUldRA" class="mr-2"><i
+          class="fab fa-youtube-square fa-2x color"></i></a>
+      <a href="https://www.instagram.com/ayama_society/" class="mr-2"><i class="fab fa-instagram fa-2x color"></i></a>
+
+    </span>
+
+    <span class="offset-1">
+      <a href="#" class="mr-2 text-light tabro3at-a "><span class="tabro3at-a ">إنشاء حساب</span></a>
+      <a href="#" class="mr-2 text-light tabro3at-a "><span class="tabro3at-a ">تسجيل الدخول</span></a>
+    </span>
+
+  </div>
+
+  <!--Nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid" dir="rtl">
+
+    <img src="images/logo.png" class="img-fluid" style="height: 50px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">الرئيسية</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">من نحن <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">مشاريعنا</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="bank.html">الحسابات البنكية</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="call.html">اتصل بنا</a>
+        </li>
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0 p-3 col-md-3 col-l-2 col-s-7">
+        <button class="btn btn-outline-success my-2 my-sm-0 mr-4" type="submit">
+          <i class="fas fa-shopping-cart"></i>سلة التبرعات
+        </button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <i class="fas fa-hands"></i> تبرع سريع
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <!--Sider-->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/s1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/s2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/s3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!--Nantzr d3mkom part-->
+
+  <section class="container mt-5 col-md-10 col-lg-10 col-s-12  ">
+    <div class="text-center">
+      <span class="text-justify text-center font-weight-bold font font-family " dir="rtl">مشاريع تنتظر دعمكم</span>
+      <hr class="col-4">
+    </div>
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner ">
+
+        <!--First slider-->
+        <div class="carousel-item active">
+          <div class="card-deck">
+            <article class="row blog">
+              <div class="card overflow-hidden">
+                <div class="card bg-dark text-white parent-ovrlay ">
+                  <img src="images/a1.png" class="card-img img-fluid" alt="...">
+                  <div class="color-opacity"></div>
+                  <div class="card-img-overlay ">
+                    <article class="row">
+                      <a href="#" class="pl-auto pr-auto"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a>
+                      &nbsp;
+                      <a href="#" class="pl-auto pr-auto"> <i class="fas fa-envelope-open fa-2x icons pr-5"></i></a>
+
+
+                    </article>
+
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <h5 class="card-title">aggh</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+              <div class="card overflow-hidden">
+                <div class="card bg-dark text-white parent-ovrlay ">
+                  <img src="images/a1.png" class="card-img-top" alt="...">
+
+                  <!--PROBLEM ICONS ARE COMING OVER EACH OTHER-->
+
+                  <div class="color-opacity"></div>
+                  <div class="card-img-overlay ">
+                    <ul>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                      <li><a href="#"> <i class="fab fa-twitter-square fa-2x icons pr-5 "></i></a></li>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+              <div class="card overflow-hidden">
+                <!--Image is smaller than article ===> PROBLEM-->
+                <div class="card bg-dark text-white parent-ovrlay ">
+                  <img src="images/a1.png" class="card-img-top" alt="...">
+                  <div class="color-opacity"></div>
+                  <div class="card-img-overlay ">
+                    <ul>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!------Second slider-->
+
+        <div class="carousel-item">
+          <div class="card-deck">
+            <article class="row blog">
+              <div class="card overflow-hidden">
+                <div class="card bg-dark text-white parent-ovrlay ">
+                  <img src="images/a2.png" class="card-img img-fluid" alt="...">
+                  <div class="color-opacity"></div>
+                  <div class="card-img-overlay ">
+                    <ul>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <h5 class="card-title">aggh</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+              <div class="card overflow-hidden">
+                <div class="card bg-dark text-white parent-ovrlay ">
+                  <img src="images/a2.png" class="card-img-top" alt="...">
+                  <div class="color-opacity"></div>
+                  <div class="card-img-overlay ">
+                    <ul>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+              <div class="card overflow-hidden">
+                <div class="card bg-dark text-white parent-ovrlay ">
+                  <img src="images/a2.png" class="card-img-top" alt="...">
+                  <div class="color-opacity"></div>
+                  <div class="card-img-overlay ">
+                    <ul>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                      <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+      <!-------------Thirs slider-------------->
+
+      <div class="carousel-item">
+
+        <div class="card-deck">
+          <article class="row blog">
+            <div class="card overflow-hidden">
+              <div class="card bg-dark text-white parent-ovrlay ">
+                <img src="images/a3.png" class="card-img img-fluid" alt="...">
+                <div class="color-opacity"></div>
+                <div class="card-img-overlay ">
+                  <ul>
+                    <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                    <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body ">
+                <h5 class="card-title">aggh</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+
+            <div class="card overflow-hidden">
+              <div class="card bg-dark text-white parent-ovrlay ">
+                <img src="images/a3.png" class="card-img-top" alt="...">
+                <div class="color-opacity"></div>
+                <div class="card-img-overlay ">
+                  <ul>
+                    <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                    <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+
+            <div class="card overflow-hidden">
+              <div class="card bg-dark text-white parent-ovrlay ">
+                <img src="images/a3.png" class="card-img-top" alt="...">
+                <div class="color-opacity"></div>
+                <div class="card-img-overlay ">
+                  <ul>
+                    <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+                    <li><a href="#"> <i class="fas fa-share-alt  fa-2x icons pr-5"></i></a></li>
+
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    </div>
+    </div>
+
+
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+
+
+  </section>
+  <!--Aksam tabro3at-->
+
+  <section class="container-fluid bg-light col-md-4 col-lg-12 col-s-12 font-family ">
+    <div class="text-center">
+      <span class="font font-weight-bold font-family  ">أقسام التبرعات</span>
+      <hr class="col-3">
+    </div>
+    <div class="row ml-auto mt-5">
+
+      <div class="card ml-auto" style="width: 15rem; height: 10rem;">
+        <img src="images/b.png" class="card-img-top mx-auto " style="width: 5rem; height:5rem;" alt="...">
+        <div class="card-body text-center">
+          <a href="#" class="color font-weight-bold tabro3at-a">وقف الأرمال و المطلقات</a>
+        </div>
+      </div>
+
+      <div class="card text-center ml-auto" style="width: 15rem; height: 10rem;">
+        <img src="images/b.png" class="card-img-top mx-auto " style="width: 5rem; height:5rem;" alt="...">
+        <div class="card-body text-center">
+          <a href="#" class="color font-weight-bold tabro3at-a">التدريب و التاهيل</a>
+        </div>
+      </div>
+
+
+      <div class="card text-center ml-auto " style="width: 15rem; height: 10rem;">
+        <img src="images/b.png" class="card-img-top mx-auto " style="width: 5rem; height:5rem;" alt="...">
+        <div class="card-body text-center">
+          <a href="#" class="color font-weight-bold tabro3at-a">زكاتك بركة</a>
+        </div>
+      </div>
+
+      <div class="card text-center ml-auto mr-auto" style="width: 15rem; height: 10rem;">
+        <img src="images/b.png" class="card-img-top mx-auto " style="width: 5rem; height:5rem;" alt="...">
+        <div class="card-body text-center">
+          <a href="#" class="color font-weight-bold tabro3at-a">الكفالات</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--End part-->
+
+  <!--End part-->
+  <footer class="page-footer font-small blue pt-4 pb-0">
+
+    <section class="container-fluid bg-dark mt-5 col-md-12 col-lg-12 col-s-12 ">
+      <article class="row about">
+
+        <article class="mr-auto ml-auto">
+          <h4 class="color text-right">وسائل الدفع </h4>
+          <img src="images/payment.png">
+        </article>
+
+
+        <article class="mr-auto ml-auto" dir="rtl">
+          <h4 class="color">بيانات التواصل</h4>
+
+          <a href="tel:015273213" class="end-color tabro3at-a"><i class="fas fa-phone"></i> 0179179230</a>
+          <br>
+          <a href="#" class="end-color tabro3at-a"><i class="fas fa-envelope-open"></i> faraha@gmai.com</a>
+
+
+        </article>
+
+        <article class="mr-auto ml-auto" dir="rtl">
+          <h4 class="color">روابط هامة</h4>
+          <ul>
+            <a href="index.html" class="tabro3at-a">
+              <li class="end-color tabro3at-a">الرئيسية</li>
+            </a>
+            <a href="projects.html" class="tabro3at-a">
+              <li class="end-color tabro3at-a">مشاريعنا</li>
+            </a>
+            <a href="#" class="tabro3at-a">
+              <li class="end-color tabro3at-a">سلةالتبرعات</li>
+            </a>
+            <a href="about.html" class="tabro3at-a">
+              <li class="end-color tabro3at-a">من نحن</li>
+            </a>
+            <a href="#" class="tabro3at-a">
+              <li class="end-color tabro3at-a">اتصل بنا</li>
+            </a>
+            <a href="bank.html" class="tabro3at-a">
+              <li class="end-color tabro3at-a">حسابات بنكية</li>
+            </a>
+          </ul>
+        </article>
+
+      </article>
+    </section>
+
+    <section class="footer text-center py-3 footer-color container-fluid ">
+
+      <article class="row" dir="rtl">
+
+        <a href="index.html" class="tabro3at-a"><span class="col-2 color mr-auto">شروط الاستخدام</span></a>
+        <a href="index.html"><span class="col-2 color ">سياسة الخصوصية </span></a>
+        <a href="index.html"><span class="col-2 color text-center py-3">تطوير صندوق الابتكار </span></a>
+
+        </div>
+
+        <article class="ml-auto">
+          <a href="https://twitter.com/ayama_society " class="mr-2"><i
+              class="fab fa-twitter-square fa-2x color "></i></a>
+          <a href="https://www.youtube.com/channel/UCszZGfWWfnuK_blz_tUldRA" class="mr-2"><i
+              class="fab fa-youtube-square fa-2x color"></i></a>
+          <a href="https://www.instagram.com/ayama_society/" class="mr-2"><i
+              class="fab fa-instagram fa-2x color"></i></a>
+        </article>
+      </article>
+
+
+    </section>
+    <script src="js/jquery.js"></script>
+    <script src="js/propper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+      integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+      crossorigin="anonymous"></script>
+
+</html>
